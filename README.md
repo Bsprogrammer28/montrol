@@ -27,20 +27,17 @@
 
 ## Getting Started
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/downloads/). From your command line:
+This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+To clone and run this project, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/downloads/). From your command line:
+
+Then you need to run following command to install all the dependencies:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
-
-# Go into the repository
-$ cd electron-markdownify
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
+$ pip install -r /path/to/requirements.txt
 ```
 
 > **Note**
