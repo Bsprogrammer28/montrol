@@ -66,6 +66,6 @@ MIT
 
 ---
 > GitHub [@Bsprogrammer28](https://github.com/Bsprogrammer28) &nbsp;&middot;&nbsp;
-> Instagram[bs_programmer_](https://www.instagram.com/bs_programmer_/)
-> LinkedIn[Bhavesh Saad](https://www.linkedin.com/in/bhavesh-saad/)
+> Instagram[bs_programmer_](https://www.instagram.com/bs_programmer_/) &nbsp;&middot;&nbsp;
+> LinkedIn[Bhavesh Saad](https://www.linkedin.com/in/bhavesh-saad/) &nbsp;&middot;&nbsp;
 > X [@Bsprogrammer1](https://x.com/Bsprogrammer1)
