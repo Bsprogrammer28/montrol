@@ -65,7 +65,7 @@ This software uses the following open source packages:
 MIT
 
 ---
-
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
+> GitHub [@Bsprogrammer28](https://github.com/Bsprogrammer28) &nbsp;&middot;&nbsp;
+> Instagram[bs_programmer_](https://www.instagram.com/bs_programmer_/)
+> LinkedIn[Bhavesh Saad](https://www.linkedin.com/in/bhavesh-saad/)
+> X [@Bsprogrammer1](https://x.com/Bsprogrammer1)
