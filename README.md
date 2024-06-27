@@ -1,8 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://drive.google.com/file/d/1YQ19KSIOlmr2lzamfOd1_pZZ5zzeyFCk/view?usp=sharing" alt="Markdownify" width="200"></a>
-  <br>
-  Markdownify
+  Montrol
   <br>
 </h1>
 
