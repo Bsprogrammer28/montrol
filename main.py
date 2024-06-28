@@ -74,7 +74,8 @@ def main():
     offsetAllowed = False
     detectionOn = True
     isScrolling = False
-    middleFigY = None
+    middleFigY = 0
+    scroll_threshold = 100
 
     # Detection Class initialization
     detector = handDetection.HandDetector()
@@ -232,23 +233,22 @@ def main():
                     curr_time_scroll = time.time()
                     time_diff_scroll = curr_time_scroll-prev_time_scroll
                     if time_diff_scroll >= wait_time_gesture:
-                        middleFigY = midFigY
-                        curr_time_scroll_state = time.time()
-                        time_diff_scroll_state = curr_time_scroll_state-prev_time_scroll_state
-                        if time_diff_scroll_state >= 0.5:
-                            pos_diff = midFigY - middleFigY
-                            if pos_diff > 0:
+                        if not isScrolling:
+                            isScrolling = True
+                            stop_event.clear()
+                            movement = middleFigY - midFigY
+                            if movement > scroll_threshold:
                                 scrollDistance = -scrollDistance
-                            if not isScrolling:
-                                isScrolling = True
-                                stop_event.clear()
 
-                                # Start scroll thread
-                                scroll_thread = threading.Thread(target=smooth_scroll, args=(scrollDistance, scrollSpeed, stop_event))
-                                scroll_thread.start()
+                            elif movement < -scroll_threshold:
+                                scrollDistance = scrollDistance
 
-                                # smooth_scroll(scrollDistance, scrollSpeed)
-                                prev_time_scroll = curr_time_scroll
+                            # Start scroll thread
+                            scroll_thread = threading.Thread(target=smooth_scroll, args=(scrollDistance, scrollSpeed, stop_event))
+                            scroll_thread.start()
+
+                            prev_time_scroll = curr_time_scroll
+                            middleFigY = midFigY
                 else:
                     if isScrolling:
                         isScrolling = False
