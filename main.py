@@ -72,7 +72,7 @@ def main():
     scrollSpeed = 2
     scrollDistance = 100
     offsetAllowed = False
-    detectionOn = True
+    detectionOn = False
     isScrolling = False
     middleFigY = 0
     scroll_threshold = 100
