@@ -192,11 +192,7 @@ def main():
                 _offsetX = 50
                 _offsetY = 50
 
-            print(idxFigZ)
-
             if detectionOn:
-
-
                 # Cursor Movement
                 # Smooth movement with low-pass filter
                 new_x, new_y = low_pass_filter(idxFigX + _offsetX, idxFigY + _offsetY, 0, 0, prev_x, prev_y)

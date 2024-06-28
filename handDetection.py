@@ -3,10 +3,11 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 import mediapipe as mp
 import cv2
+from google.protobuf.json_format import MessageToDict 
 
 
 class HandDetector():
-    def __init__(self, mode=False, maxHands=1, model_complexity=1, detectionCon=.8, trackCon=0.8) -> None:
+    def __init__(self, mode=False, maxHands=2, model_complexity=1, detectionCon=.8, trackCon=0.8) -> None:
         self.mode = mode
         self.maxHands = maxHands
         self.complexity = model_complexity
